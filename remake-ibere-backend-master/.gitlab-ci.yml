@@ -1,0 +1,38 @@
+image: node:latest
+
+stages:
+  - build
+  - test
+
+cache:
+  paths:
+    - node_modules/
+
+install_dependencies:
+   stage: build
+   except:
+     - master
+   script:
+     - npm install
+   cache:
+     paths:
+       - node_modules/
+
+testing_lint:
+  stage: test
+  except:
+    - master
+  script: npm run lint
+  cache:
+    paths:
+      - node_modules/
+
+testing_testing:
+  stage: test
+  except:
+    - master
+  script: npm run test-no-color
+  coverage: /All files\s*\|\s*([\d\.]+)/
+  cache:
+    paths:
+      - node_modules/

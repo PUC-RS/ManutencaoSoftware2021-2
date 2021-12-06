@@ -1,0 +1,51 @@
+.container {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    height: 150%;
+}
+
+.container1 {
+    display: flex;
+}
+
+.titulo {
+    font-size: 14px;
+}
+
+.divider {
+    margin: 6px 0;
+}
+
+.horariosContatoContainer {
+    padding-top: 20px;
+
+}
+
+.email-telefone{
+    padding-bottom: 20px;
+}
+
+.contatoContainer {
+    color: gray;
+    word-break: break-all; 
+}
+
+#email {
+    padding-top: 8px;
+}
+
+#titulo {
+    font-size: 24px;
+}
+
+#subtitulo2 {
+    color: green;
+}
+
+.observacoes{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 3%;
+}
